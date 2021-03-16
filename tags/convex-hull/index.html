@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.2.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Tag: convex hull - weiwen🐟1990</title>
+
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="weiwen🐟1990">
+<meta property="og:url" content="http://weiwen.ai/tags/convex-hull/index.html">
+<meta property="og:site_name" content="weiwen🐟1990">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://weiwen.ai/images/og_image.png">
+<meta property="article:author" content="WEI Wen">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://weiwen.ai/images/og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/thumb-default-small.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.png" alt="weiwen🐟1990" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">Home</a>
+                
+                <a class="navbar-item"
+                href="/archives">Archives</a>
+                
+                <a class="navbar-item"
+                href="/categories">Categories</a>
+                
+                <a class="navbar-item"
+                href="/tags">Tags</a>
+                
+                <a class="navbar-item"
+                href="/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">convex hull</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-11-19T01:24:27.000Z">2016-11-19</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 694 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2016/11/19/a-bite-of-computational-geometry/">计算几何入门</a>
+            
+        </h1>
+        <div class="content">
+            <p>公司每周举办技术沙龙，我惆怅了许久演讲主题，最终选定__计算几何__。研究生时期旁听了邓老师开设的这门课程，体验到思考的乐趣。<br>惊喜的发现，学堂在线有邓老师的计算几何课程，有讲义和视频。已经与去教室听讲几乎无异啦。于是演讲前两天刷了刷，温习了__<em>Convex Hull(凸包)</em><strong>的生成算法和</strong><em>Voronoi Diagram</em>__的基本知识，现学现卖😁</p>
+<hr>
+<p>把链接和参考资料记录在这里</p>
+<p><a href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+70240183x+2016_2/info">邓老师《计算几何》课程 - 学堂在线</a><br>邓老师的电子讲义<a href="http://pan.baidu.com/s/1eQrYn9w">电子阅读版（全幅）</a> <a href="http://pan.baidu.com/s/1dDAXjFz">打印版（八拼）</a><br><a href="http://dsa.cs.tsinghua.edu.cn/~deng/cg/demo/index.htm">Demo演示（需要使用支持Java Applet的旧版浏览器）</a></p>
+<p><a href="http://leebyron.com/mesh/">Mesh – A Processing Library</a></p>
+<hr>
+<p>⬆️最后一个链接是一个小巧的Processing库，提供生成从平面点集生成凸包／Voronoi图的功能。<br>Processing确实是快速做演示的好工具，把我用Mesh库做的两个小Demo放上来。</p>
+<p>接受鼠标点击，生成当前点集的凸包。<br><img src="https://raw.githubusercontent.com/veslam/blog/master/res/20161119_01_ConvexHull.png" alt="showConvexHull"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> megamu.mesh.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> arraySize = <span class="number">64</span>, numOfPoints = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">float</span>[][] points = <span class="keyword">new</span> <span class="keyword">float</span>[arraySize][<span class="number">2</span>];</span><br><span class="line">Hull myHull;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> pointRadius = <span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  size(<span class="number">640</span>, <span class="number">360</span>);</span><br><span class="line">  </span><br><span class="line">  addPoint(<span class="number">120</span>, <span class="number">230</span>);</span><br><span class="line">  addPoint(<span class="number">150</span>, <span class="number">105</span>);</span><br><span class="line">  addPoint(<span class="number">320</span>, <span class="number">113</span>);</span><br><span class="line">  addPoint(<span class="number">250</span>, <span class="number">250</span>);</span><br><span class="line">  addPoint(<span class="number">240</span>, <span class="number">150</span>);</span><br><span class="line">  addPoint(<span class="number">200</span>, <span class="number">190</span>);</span><br><span class="line">  addPoint(<span class="number">236</span>, <span class="number">75</span>);</span><br><span class="line">  addPoint(<span class="number">310</span>, <span class="number">70</span>);</span><br><span class="line">  addPoint(<span class="number">373</span>, <span class="number">134</span>);</span><br><span class="line">  addPoint(<span class="number">193</span>, <span class="number">126</span>);</span><br><span class="line">  addPoint(<span class="number">269</span>, <span class="number">96</span>);</span><br><span class="line">  addPoint(<span class="number">301</span>, <span class="number">171</span>);</span><br><span class="line">  addPoint(<span class="number">258</span>, <span class="number">193</span>);</span><br><span class="line">  addPoint(<span class="number">285</span>, <span class="number">135</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//rebuild();</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="comment">// show all points</span></span><br><span class="line">   fill(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numOfPoints; i ++) &#123;</span><br><span class="line">     ellipse(points[i][<span class="number">0</span>], points[i][<span class="number">1</span>], pointRadius + <span class="number">2</span>, pointRadius + <span class="number">2</span>);</span><br><span class="line">   &#125;</span><br><span class="line">  </span><br><span class="line">   <span class="keyword">if</span> (null != myHull) &#123;</span><br><span class="line">    </span><br><span class="line">       <span class="comment">// fill polygon</span></span><br><span class="line">       MPolygon myRegion = myHull.getRegion();</span><br><span class="line">       fill(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>, <span class="number">20</span>);</span><br><span class="line">       myRegion.draw(<span class="keyword">this</span>);</span><br><span class="line">             </span><br><span class="line">       <span class="comment">// reshow extreme points</span></span><br><span class="line">       <span class="keyword">int</span>[] extrema = myHull.getExtrema();</span><br><span class="line">       fill(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>);     </span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; extrema.length; i ++) &#123;      </span><br><span class="line">          ellipse(points[extrema[i]][<span class="number">0</span>], points[extrema[i]][<span class="number">1</span>], pointRadius, pointRadius);</span><br><span class="line">       &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mouseClicked</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">//println(&quot;mousePosition (&quot;, mouseX, &quot;, &quot;, mouseY, &quot;)&quot;);</span></span><br><span class="line">  </span><br><span class="line">  addPoint(mouseX, mouseY);</span><br><span class="line">  rebuild();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addPoint</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">  points[numOfPoints][<span class="number">0</span>] = x;</span><br><span class="line">  points[numOfPoints][<span class="number">1</span>] = y;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// trick</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="number">0</span> == numOfPoints) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arraySize; i ++) &#123;</span><br><span class="line">      points[i][<span class="number">0</span>] = x;</span><br><span class="line">      points[i][<span class="number">1</span>] = y;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  numOfPoints ++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyPressed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  rebuild();</span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">rebuild</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  myHull = <span class="keyword">new</span> Hull( points );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>接受鼠标点击，生成当前点集的Voronoi Diagram。<br><img src="https://raw.githubusercontent.com/veslam/blog/master/res/20161119_02_VoronoiDiagram.png" alt="showVoronoiDiagram"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> megamu.mesh.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">float</span>[][] points;</span><br><span class="line">Voronoi myVoronoi;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> pointRadius = <span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  size(<span class="number">640</span>, <span class="number">360</span>);</span><br><span class="line">  </span><br><span class="line">  addPoint(<span class="number">120</span>, <span class="number">230</span>);</span><br><span class="line">  addPoint(<span class="number">150</span>, <span class="number">105</span>);</span><br><span class="line">  addPoint(<span class="number">320</span>, <span class="number">113</span>);</span><br><span class="line">  addPoint(<span class="number">250</span>, <span class="number">250</span>);</span><br><span class="line">  addPoint(<span class="number">240</span>, <span class="number">150</span>);</span><br><span class="line">  addPoint(<span class="number">200</span>, <span class="number">190</span>);</span><br><span class="line">  addPoint(<span class="number">236</span>, <span class="number">75</span>);</span><br><span class="line">  addPoint(<span class="number">310</span>, <span class="number">70</span>);</span><br><span class="line">  addPoint(<span class="number">373</span>, <span class="number">134</span>);</span><br><span class="line">  addPoint(<span class="number">193</span>, <span class="number">126</span>);</span><br><span class="line">  addPoint(<span class="number">269</span>, <span class="number">96</span>);</span><br><span class="line">  addPoint(<span class="number">301</span>, <span class="number">171</span>);</span><br><span class="line">  addPoint(<span class="number">258</span>, <span class="number">193</span>);</span><br><span class="line">  addPoint(<span class="number">285</span>, <span class="number">135</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="comment">//rebuild();</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="comment">// show all points</span></span><br><span class="line">   fill(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>);</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; points.length; i ++) &#123;</span><br><span class="line">     ellipse(points[i][<span class="number">0</span>], points[i][<span class="number">1</span>], pointRadius + <span class="number">2</span>, pointRadius + <span class="number">2</span>);</span><br><span class="line">   &#125;</span><br><span class="line">  </span><br><span class="line">   <span class="keyword">if</span> (null != myVoronoi) &#123;</span><br><span class="line">    </span><br><span class="line">      <span class="comment">// fill polygon</span></span><br><span class="line">      MPolygon[] myRegions = myVoronoi.getRegions();</span><br><span class="line">       </span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;myRegions.length; i++)</span><br><span class="line">      &#123;</span><br><span class="line">        randomColorFill();</span><br><span class="line">        myRegions[i].draw(<span class="keyword">this</span>); <span class="comment">// draw this shape</span></span><br><span class="line">      &#125;</span><br><span class="line">       </span><br><span class="line">  </span><br><span class="line">      <span class="keyword">float</span>[][] myEdges = myVoronoi.getEdges();</span><br><span class="line">      </span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;myEdges.length; i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">float</span> startX = myEdges[i][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">float</span> startY = myEdges[i][<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">float</span> endX = myEdges[i][<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">float</span> endY = myEdges[i][<span class="number">3</span>];</span><br><span class="line">        line( startX, startY, endX, endY );</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mouseClicked</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">//println(&quot;mousePosition (&quot;, mouseX, &quot;, &quot;, mouseY, &quot;)&quot;);</span></span><br><span class="line">  </span><br><span class="line">  addPoint(mouseX, mouseY);</span><br><span class="line">  rebuild();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">addPoint</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> oldLength;</span><br><span class="line">  <span class="keyword">if</span> (null == points) &#123;</span><br><span class="line">    oldLength = <span class="number">0</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    oldLength = points.length;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  <span class="keyword">float</span>[][] newPoints = <span class="keyword">new</span> <span class="keyword">float</span>[oldLength + <span class="number">1</span>][<span class="number">2</span>];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; oldLength; i ++) &#123;</span><br><span class="line">    newPoints[i][<span class="number">0</span>] = points[i][<span class="number">0</span>];</span><br><span class="line">    newPoints[i][<span class="number">1</span>] = points[i][<span class="number">1</span>];</span><br><span class="line">  &#125;</span><br><span class="line">  newPoints[oldLength][<span class="number">0</span>] = x;</span><br><span class="line">  newPoints[oldLength][<span class="number">1</span>] = y;</span><br><span class="line">  </span><br><span class="line">  points = newPoints;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">keyPressed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  rebuild();</span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">rebuild</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  myVoronoi = <span class="keyword">new</span> Voronoi( points );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">randomColorFill</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  fill(random(<span class="number">256</span>), random(<span class="number">256</span>), random(<span class="number">256</span>), <span class="number">20</span>);</span><br><span class="line">  <span class="keyword">return</span>;</span><br><span class="line">  <span class="comment">// <span class="doctag">TODO:</span> &#x27;&#x27;&#x27;Generate a random hsl color.&#x27;&#x27;&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-07-27T10:00:06.000Z">2016-07-27</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 723 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2016/07/27/point-inside-convex-hull/">点在凸包内检测</a>
+            
+        </h1>
+        <div class="content">
+            <p>不久遇到个具体问题，是如何判断一个point是否在一个rotatedRect内部。<br>找到两个网页给出了解答。</p>
+<p><a href="http://www.gamedev.net/topic/142526-checking-if-a-point-is-inside-a-rotated-rectangle/">第一个网页</a>提供了多种解决方法。</p>
+<p>方法一：把矩形转正，点的坐标也要变换从而保持相对位置不变，就转化为简单的x/y坐标是否在矩形内判断了。</p>
+<blockquote>
+<p>You can rotate the point by an inverse angle about the center of the rectangle given that you know by how much the rectangle was rotated. Then the test to see if the point is inside the axis-aligned rectangle becomes a trivial thing.</p>
+</blockquote>
+<p>方法二：用目标点分别与矩形两个相邻节点组成三角形，比较这4个三角形的面积之和是否与矩形总面积（几乎）相等。不过这个方法的误差限epsilon可能要手调。</p>
+<blockquote>
+<p>If you are testing a rectangle ABCD with a point x, check if<br>area(ABx) + area(BCx) + area(CDx) + area(DAx) &lt; area(ABCD) + epsilon<br>If so, you are inside. Otherwise you are outside. There are probably faster checks, but this is pretty simple conceptually and programming-wise. </p>
+</blockquote>
+<p>方法三，先不说是什么，看到这个简洁的代码我立马震惊。</p>
+<blockquote>
+<p>try this:</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> ex,ey,fx,fy;</span><br><span class="line"></span><br><span class="line">ex=bx-ax; ey=by-ay;</span><br><span class="line">fx=dx-ax; fy=dy-ay;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ((x-ax)*ex+(y-ay)*ey&lt;<span class="number">0.0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span> ((x-bx)*ex+(y-by)*ey&gt;<span class="number">0.0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span> ((x-ax)*fx+(y-ay)*fy&lt;<span class="number">0.0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span> ((x-dx)*fx+(y-dy)*fy&gt;<span class="number">0.0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Easy huh? Without rotation or drawing rectangles… I assume that a,b,c and d are really the four corners of a rectangle.<br>The test is just checking whether the point lies on the right side of each rectangle edge.</p>
+</blockquote>
+<p>原来是Right Test！脑中远古的记忆又依稀了起来。什么是<strong>Right Test</strong>呢？它是计算几何里非常非常非常基本的一个方法。知名度就像考拉之于澳大利亚一样。</p>
+<p>那么下面就结合<a href="http://www.blackpawn.com/texts/pointinpoly/">第二个网页</a>理解Right Test吧！它讲的很详细。<br>例子是三角形ABC，但这个方法适用于所有凸多边形。<br><img src="https://raw.githubusercontent.com/veslam/blog/master/res/20160727_01_RightTest.png" alt="p是否在ABC内"></p>
+<p>怎么判断点p是否在三角形内呢？既然这个三角形是由三条边围成的，那如果相对于每条边，点p与第三个点在同侧，就能确定p在三角形内。</p>
+<p>确定问题：怎么判断点p, C在线段AB同侧？用叉乘： [B-A] cross [p-A] 应该与 [B-A] cross [C-A] 同号。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function SameSide(p1,p2, a,b)</span><br><span class="line">    cp1 = CrossProduct(b-a, p1-a)</span><br><span class="line">    cp2 = CrossProduct(b-a, p2-a)</span><br><span class="line">    <span class="keyword">if</span> DotProduct(cp1, cp2) &gt;= <span class="number">0</span> then <span class="keyword">return</span> true</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> false</span><br><span class="line"></span><br><span class="line">function PointInTriangle(p, a,b,c)</span><br><span class="line">    <span class="keyword">if</span> SameSide(p,a, b,c) <span class="keyword">and</span> SameSide(p,b, a,c)</span><br><span class="line">        <span class="keyword">and</span> SameSide(p,c, a,b) then <span class="keyword">return</span> true</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> false</span><br></pre></td></tr></table></figure>
+
+<p>p.s. <a href="http://www.blackpawn.com/texts/pointinpoly/">该网页还介绍了针对三角形的另一种方法</a></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/avatar.png" alt="WEI Wen">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        WEI Wen
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Researcher
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Beijing, China.</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            61
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            0
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            95
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://facebook.com/weiwen.cn" target="_blank" rel="noopener">
+                Follow</a>
+        </div>
+        
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Github" href="https://github.com/veslam">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Facebook" href="https://facebook.com/weiwen.cn">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Dribbble" href="https://www.douban.com/people/WeWin/">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Links
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">github.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categories
+            </h3>
+            <ul class="menu-list">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/tags/AVFoundation/" style="font-size: 11.11px;">AVFoundation</a> <a href="/tags/Android/" style="font-size: 11.11px;">Android</a> <a href="/tags/Android-Studio/" style="font-size: 10px;">Android Studio</a> <a href="/tags/Beijing/" style="font-size: 10px;">Beijing</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/Cocos2d/" style="font-size: 11.11px;">Cocos2d</a> <a href="/tags/Cocos2d-x/" style="font-size: 12.22px;">Cocos2d-x</a> <a href="/tags/Dairy/" style="font-size: 10px;">Dairy</a> <a href="/tags/Dalian/" style="font-size: 10px;">Dalian</a> <a href="/tags/Diamond-of-Death/" style="font-size: 10px;">Diamond of Death</a> <a href="/tags/Diary/" style="font-size: 10px;">Diary</a> <a href="/tags/Fuzhou/" style="font-size: 11.11px;">Fuzhou</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Google-Drive/" style="font-size: 10px;">Google Drive</a> <a href="/tags/GuoGuo/" style="font-size: 14.44px;">GuoGuo</a> <a href="/tags/HIKVISION/" style="font-size: 10px;">HIKVISION</a> <a href="/tags/HackerRank/" style="font-size: 10px;">HackerRank</a> <a href="/tags/Hexo/" style="font-size: 11.11px;">Hexo</a> <a href="/tags/Huairou/" style="font-size: 10px;">Huairou</a> <a href="/tags/IDE/" style="font-size: 10px;">IDE</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JiLi/" style="font-size: 10px;">JiLi</a> <a href="/tags/Langfang/" style="font-size: 10px;">Langfang</a> <a href="/tags/MarkdownEditing/" style="font-size: 10px;">MarkdownEditing</a> <a href="/tags/Mesa/" style="font-size: 10px;">Mesa</a> <a href="/tags/Miyun/" style="font-size: 10px;">Miyun</a> <a href="/tags/NiuNiu/" style="font-size: 13.33px;">NiuNiu</a> <a href="/tags/OJ/" style="font-size: 11.11px;">OJ</a> <a href="/tags/OpenCV/" style="font-size: 11.11px;">OpenCV</a> <a href="/tags/OpenGL/" style="font-size: 10px;">OpenGL</a> <a href="/tags/Processing/" style="font-size: 10px;">Processing</a> <a href="/tags/Qiniu/" style="font-size: 10px;">Qiniu</a> <a href="/tags/TOEFL/" style="font-size: 10px;">TOEFL</a> <a href="/tags/Tianjin/" style="font-size: 11.11px;">Tianjin</a> <a href="/tags/Visual-Studio/" style="font-size: 10px;">Visual Studio</a> <a href="/tags/VisualStudio/" style="font-size: 10px;">VisualStudio</a> <a href="/tags/Windows/" style="font-size: 11.11px;">Windows</a> <a href="/tags/Xcode/" style="font-size: 11.11px;">Xcode</a> <a href="/tags/Xiamen/" style="font-size: 12.22px;">Xiamen</a> <a href="/tags/Yanqing/" style="font-size: 10px;">Yanqing</a> <a href="/tags/badminton/" style="font-size: 10px;">badminton</a> <a href="/tags/bike/" style="font-size: 11.11px;">bike</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/c/" style="font-size: 11.11px;">c++</a> <a href="/tags/cc-Label/" style="font-size: 10px;">cc.Label</a> <a href="/tags/codepen/" style="font-size: 10px;">codepen</a> <a href="/tags/coding/" style="font-size: 18.89px;">coding</a> <a href="/tags/computational-geometry/" style="font-size: 11.11px;">computational geometry</a> <a href="/tags/constructor/" style="font-size: 10px;">constructor</a> <a href="/tags/convex-hull/" style="font-size: 11.11px;">convex hull</a> <a href="/tags/cpr/" style="font-size: 10px;">cpr</a> <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/dogs/" style="font-size: 12.22px;">dogs</a> <a href="/tags/drawing/" style="font-size: 10px;">drawing</a> <a href="/tags/driving/" style="font-size: 14.44px;">driving</a> <a href="/tags/drums/" style="font-size: 12.22px;">drums</a> <a href="/tags/dynamic-programming/" style="font-size: 10px;">dynamic programming</a> <a href="/tags/eclipse/" style="font-size: 10px;">eclipse</a> <a href="/tags/fire/" style="font-size: 10px;">fire</a> <a href="/tags/fitness/" style="font-size: 17.78px;">fitness</a> <a href="/tags/fnt/" style="font-size: 10px;">fnt</a> <a href="/tags/football/" style="font-size: 12.22px;">football</a> <a href="/tags/freeCodeCamp/" style="font-size: 11.11px;">freeCodeCamp</a> <a href="/tags/glsl/" style="font-size: 10px;">glsl</a> <a href="/tags/guitar/" style="font-size: 11.11px;">guitar</a> <a href="/tags/holiday/" style="font-size: 10px;">holiday</a> <a href="/tags/iOS/" style="font-size: 13.33px;">iOS</a> <a href="/tags/learning/" style="font-size: 10px;">learning</a> <a href="/tags/love/" style="font-size: 10px;">love</a> <a href="/tags/lua/" style="font-size: 11.11px;">lua</a> <a href="/tags/memorial-day/" style="font-size: 14.44px;">memorial day</a> <a href="/tags/movie/" style="font-size: 10px;">movie</a> <a href="/tags/multiple-inheritance/" style="font-size: 10px;">multiple inheritance</a> <a href="/tags/music/" style="font-size: 10px;">music</a> <a href="/tags/nim-game/" style="font-size: 10px;">nim game</a> <a href="/tags/party/" style="font-size: 11.11px;">party</a> <a href="/tags/photography/" style="font-size: 10px;">photography</a> <a href="/tags/piano/" style="font-size: 15.56px;">piano</a> <a href="/tags/priority-queue/" style="font-size: 10px;">priority queue</a> <a href="/tags/pthread/" style="font-size: 10px;">pthread</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/reading/" style="font-size: 10px;">reading</a> <a href="/tags/schedule/" style="font-size: 10px;">schedule</a> <a href="/tags/static-library/" style="font-size: 10px;">static library</a> <a href="/tags/subclass/" style="font-size: 10px;">subclass</a> <a href="/tags/superclass/" style="font-size: 10px;">superclass</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/targets/" style="font-size: 10px;">targets</a> <a href="/tags/tour/" style="font-size: 15.56px;">tour</a> <a href="/tags/turtles/" style="font-size: 10px;">turtles</a> <a href="/tags/tutorial/" style="font-size: 10px;">tutorial</a> <a href="/tags/video/" style="font-size: 10px;">video</a> <a href="/tags/weekend/" style="font-size: 16.67px;">weekend</a> <a href="/tags/weekly/" style="font-size: 10px;">weekly</a> <a href="/tags/work-log/" style="font-size: 10px;">work log</a>
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/30/weekly-2019-03-29/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="周记-2019-03-29">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-29T16:11:45.000Z">2020-03-30</time></div>
+                    <a href="/2020/03/30/weekly-2019-03-29/" class="title has-link-black-ter is-size-6 has-text-weight-normal">周记-2019-03-29</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08/05/from-Langfang-to-Beijing-car-license-plate/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="小长安从廊坊迁入北京记录">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-05T00:42:00.000Z">2019-08-05</time></div>
+                    <a href="/2019/08/05/from-Langfang-to-Beijing-car-license-plate/" class="title has-link-black-ter is-size-6 has-text-weight-normal">小长安从廊坊迁入北京记录</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/12/25/weekend-20181221-rebirth/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="周末20181221-重生">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-12-25T09:19:52.000Z">2018-12-25</time></div>
+                    <a href="/2018/12/25/weekend-20181221-rebirth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">周末20181221-重生</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/12/23/day-2018-12-23/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="2019新年-安排上了">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-12-23T03:05:22.000Z">2018-12-23</time></div>
+                    <a href="/2018/12/23/day-2018-12-23/" class="title has-link-black-ter is-size-6 has-text-weight-normal">2019新年-安排上了</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/07/export-from-Qiniu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="博客图片告别七牛移至GitHub">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-07T02:44:13.000Z">2018-11-07</time></div>
+                    <a href="/2018/11/07/export-from-Qiniu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">博客图片告别七牛移至GitHub</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">November 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/02/">
+                <span class="level-start">
+                    <span class="level-item">February 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/02/">
+                <span class="level-start">
+                    <span class="level-item">February 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/01/">
+                <span class="level-start">
+                    <span class="level-item">January 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/11/">
+                <span class="level-start">
+                    <span class="level-item">November 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">7</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">8</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">9</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/AVFoundation/">
+                        <span class="tag">AVFoundation</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android/">
+                        <span class="tag">Android</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android-Studio/">
+                        <span class="tag">Android Studio</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Beijing/">
+                        <span class="tag">Beijing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/C/">
+                        <span class="tag">C++</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Cocos2d/">
+                        <span class="tag">Cocos2d</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Cocos2d-x/">
+                        <span class="tag">Cocos2d-x</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Dairy/">
+                        <span class="tag">Dairy</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Dalian/">
+                        <span class="tag">Dalian</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Diamond-of-Death/">
+                        <span class="tag">Diamond of Death</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Diary/">
+                        <span class="tag">Diary</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Fuzhou/">
+                        <span class="tag">Fuzhou</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/GitHub/">
+                        <span class="tag">GitHub</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Google-Drive/">
+                        <span class="tag">Google Drive</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/GuoGuo/">
+                        <span class="tag">GuoGuo</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/HIKVISION/">
+                        <span class="tag">HIKVISION</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/HackerRank/">
+                        <span class="tag">HackerRank</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Huairou/">
+                        <span class="tag">Huairou</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/IDE/">
+                        <span class="tag">IDE</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JiLi/">
+                        <span class="tag">JiLi</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Langfang/">
+                        <span class="tag">Langfang</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/MarkdownEditing/">
+                        <span class="tag">MarkdownEditing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Mesa/">
+                        <span class="tag">Mesa</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Miyun/">
+                        <span class="tag">Miyun</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/NiuNiu/">
+                        <span class="tag">NiuNiu</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OJ/">
+                        <span class="tag">OJ</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenCV/">
+                        <span class="tag">OpenCV</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenGL/">
+                        <span class="tag">OpenGL</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Processing/">
+                        <span class="tag">Processing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Qiniu/">
+                        <span class="tag">Qiniu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/TOEFL/">
+                        <span class="tag">TOEFL</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Tianjin/">
+                        <span class="tag">Tianjin</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Visual-Studio/">
+                        <span class="tag">Visual Studio</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/VisualStudio/">
+                        <span class="tag">VisualStudio</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Windows/">
+                        <span class="tag">Windows</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Xcode/">
+                        <span class="tag">Xcode</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Xiamen/">
+                        <span class="tag">Xiamen</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Yanqing/">
+                        <span class="tag">Yanqing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/badminton/">
+                        <span class="tag">badminton</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/bike/">
+                        <span class="tag">bike</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/binary-search/">
+                        <span class="tag">binary search</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/c/">
+                        <span class="tag">c++</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cc-Label/">
+                        <span class="tag">cc.Label</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/codepen/">
+                        <span class="tag">codepen</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/coding/">
+                        <span class="tag">coding</span>
+                        <span class="tag is-grey">13</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/computational-geometry/">
+                        <span class="tag">computational geometry</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/constructor/">
+                        <span class="tag">constructor</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/convex-hull/">
+                        <span class="tag">convex hull</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cpr/">
+                        <span class="tag">cpr</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/diary/">
+                        <span class="tag">diary</span>
+                        <span class="tag is-grey">22</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/dogs/">
+                        <span class="tag">dogs</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/drawing/">
+                        <span class="tag">drawing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/driving/">
+                        <span class="tag">driving</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/drums/">
+                        <span class="tag">drums</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/dynamic-programming/">
+                        <span class="tag">dynamic programming</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/eclipse/">
+                        <span class="tag">eclipse</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/fire/">
+                        <span class="tag">fire</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/fitness/">
+                        <span class="tag">fitness</span>
+                        <span class="tag is-grey">9</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/fnt/">
+                        <span class="tag">fnt</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/football/">
+                        <span class="tag">football</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/freeCodeCamp/">
+                        <span class="tag">freeCodeCamp</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/glsl/">
+                        <span class="tag">glsl</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/guitar/">
+                        <span class="tag">guitar</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/holiday/">
+                        <span class="tag">holiday</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/iOS/">
+                        <span class="tag">iOS</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/learning/">
+                        <span class="tag">learning</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/love/">
+                        <span class="tag">love</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/lua/">
+                        <span class="tag">lua</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/memorial-day/">
+                        <span class="tag">memorial day</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/movie/">
+                        <span class="tag">movie</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/multiple-inheritance/">
+                        <span class="tag">multiple inheritance</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/music/">
+                        <span class="tag">music</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/nim-game/">
+                        <span class="tag">nim game</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/party/">
+                        <span class="tag">party</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/photography/">
+                        <span class="tag">photography</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/piano/">
+                        <span class="tag">piano</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/priority-queue/">
+                        <span class="tag">priority queue</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/pthread/">
+                        <span class="tag">pthread</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/reading/">
+                        <span class="tag">reading</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/schedule/">
+                        <span class="tag">schedule</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/static-library/">
+                        <span class="tag">static library</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/subclass/">
+                        <span class="tag">subclass</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/superclass/">
+                        <span class="tag">superclass</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/svn/">
+                        <span class="tag">svn</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/targets/">
+                        <span class="tag">targets</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/tour/">
+                        <span class="tag">tour</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/turtles/">
+                        <span class="tag">turtles</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/tutorial/">
+                        <span class="tag">tutorial</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/video/">
+                        <span class="tag">video</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/weekend/">
+                        <span class="tag">weekend</span>
+                        <span class="tag is-grey">8</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/weekly/">
+                        <span class="tag">weekly</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/work-log/">
+                        <span class="tag">work log</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/30/weekly-2019-03-29/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="周记-2019-03-29">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-29T16:11:45.000Z">2020-03-30</time></div>
+                    <a href="/2020/03/30/weekly-2019-03-29/" class="title has-link-black-ter is-size-6 has-text-weight-normal">周记-2019-03-29</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/08/05/from-Langfang-to-Beijing-car-license-plate/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="小长安从廊坊迁入北京记录">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-05T00:42:00.000Z">2019-08-05</time></div>
+                    <a href="/2019/08/05/from-Langfang-to-Beijing-car-license-plate/" class="title has-link-black-ter is-size-6 has-text-weight-normal">小长安从廊坊迁入北京记录</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/12/25/weekend-20181221-rebirth/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="周末20181221-重生">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-12-25T09:19:52.000Z">2018-12-25</time></div>
+                    <a href="/2018/12/25/weekend-20181221-rebirth/" class="title has-link-black-ter is-size-6 has-text-weight-normal">周末20181221-重生</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/12/23/day-2018-12-23/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="2019新年-安排上了">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-12-23T03:05:22.000Z">2018-12-23</time></div>
+                    <a href="/2018/12/23/day-2018-12-23/" class="title has-link-black-ter is-size-6 has-text-weight-normal">2019新年-安排上了</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2018/11/07/export-from-Qiniu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="博客图片告别七牛移至GitHub">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-11-07T02:44:13.000Z">2018-11-07</time></div>
+                    <a href="/2018/11/07/export-from-Qiniu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">博客图片告别七牛移至GitHub</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/11/">
+                <span class="level-start">
+                    <span class="level-item">November 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/02/">
+                <span class="level-start">
+                    <span class="level-item">February 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/02/">
+                <span class="level-start">
+                    <span class="level-item">February 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2017/01/">
+                <span class="level-start">
+                    <span class="level-item">January 2017</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/12/">
+                <span class="level-start">
+                    <span class="level-item">December 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/11/">
+                <span class="level-start">
+                    <span class="level-item">November 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">7</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/10/">
+                <span class="level-start">
+                    <span class="level-item">October 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">8</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">9</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2016/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2016</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/AVFoundation/">
+                        <span class="tag">AVFoundation</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android/">
+                        <span class="tag">Android</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Android-Studio/">
+                        <span class="tag">Android Studio</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Beijing/">
+                        <span class="tag">Beijing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/C/">
+                        <span class="tag">C++</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Cocos2d/">
+                        <span class="tag">Cocos2d</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Cocos2d-x/">
+                        <span class="tag">Cocos2d-x</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Dairy/">
+                        <span class="tag">Dairy</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Dalian/">
+                        <span class="tag">Dalian</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Diamond-of-Death/">
+                        <span class="tag">Diamond of Death</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Diary/">
+                        <span class="tag">Diary</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Fuzhou/">
+                        <span class="tag">Fuzhou</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/GitHub/">
+                        <span class="tag">GitHub</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Google-Drive/">
+                        <span class="tag">Google Drive</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/GuoGuo/">
+                        <span class="tag">GuoGuo</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/HIKVISION/">
+                        <span class="tag">HIKVISION</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/HackerRank/">
+                        <span class="tag">HackerRank</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Huairou/">
+                        <span class="tag">Huairou</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/IDE/">
+                        <span class="tag">IDE</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JavaScript/">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/JiLi/">
+                        <span class="tag">JiLi</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Langfang/">
+                        <span class="tag">Langfang</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/MarkdownEditing/">
+                        <span class="tag">MarkdownEditing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Mesa/">
+                        <span class="tag">Mesa</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Miyun/">
+                        <span class="tag">Miyun</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/NiuNiu/">
+                        <span class="tag">NiuNiu</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OJ/">
+                        <span class="tag">OJ</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenCV/">
+                        <span class="tag">OpenCV</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenGL/">
+                        <span class="tag">OpenGL</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Processing/">
+                        <span class="tag">Processing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Qiniu/">
+                        <span class="tag">Qiniu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/TOEFL/">
+                        <span class="tag">TOEFL</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Tianjin/">
+                        <span class="tag">Tianjin</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Visual-Studio/">
+                        <span class="tag">Visual Studio</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/VisualStudio/">
+                        <span class="tag">VisualStudio</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Windows/">
+                        <span class="tag">Windows</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Xcode/">
+                        <span class="tag">Xcode</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Xiamen/">
+                        <span class="tag">Xiamen</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Yanqing/">
+                        <span class="tag">Yanqing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/badminton/">
+                        <span class="tag">badminton</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/bike/">
+                        <span class="tag">bike</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/binary-search/">
+                        <span class="tag">binary search</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/c/">
+                        <span class="tag">c++</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cc-Label/">
+                        <span class="tag">cc.Label</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/codepen/">
+                        <span class="tag">codepen</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/coding/">
+                        <span class="tag">coding</span>
+                        <span class="tag is-grey">13</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/computational-geometry/">
+                        <span class="tag">computational geometry</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/constructor/">
+                        <span class="tag">constructor</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/convex-hull/">
+                        <span class="tag">convex hull</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/cpr/">
+                        <span class="tag">cpr</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/diary/">
+                        <span class="tag">diary</span>
+                        <span class="tag is-grey">22</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/dogs/">
+                        <span class="tag">dogs</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/drawing/">
+                        <span class="tag">drawing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/driving/">
+                        <span class="tag">driving</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/drums/">
+                        <span class="tag">drums</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/dynamic-programming/">
+                        <span class="tag">dynamic programming</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/eclipse/">
+                        <span class="tag">eclipse</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/fire/">
+                        <span class="tag">fire</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/fitness/">
+                        <span class="tag">fitness</span>
+                        <span class="tag is-grey">9</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/fnt/">
+                        <span class="tag">fnt</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/football/">
+                        <span class="tag">football</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/freeCodeCamp/">
+                        <span class="tag">freeCodeCamp</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/glsl/">
+                        <span class="tag">glsl</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/guitar/">
+                        <span class="tag">guitar</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/holiday/">
+                        <span class="tag">holiday</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/iOS/">
+                        <span class="tag">iOS</span>
+                        <span class="tag is-grey">4</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/learning/">
+                        <span class="tag">learning</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/love/">
+                        <span class="tag">love</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/lua/">
+                        <span class="tag">lua</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/memorial-day/">
+                        <span class="tag">memorial day</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/movie/">
+                        <span class="tag">movie</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/multiple-inheritance/">
+                        <span class="tag">multiple inheritance</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/music/">
+                        <span class="tag">music</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/nim-game/">
+                        <span class="tag">nim game</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/party/">
+                        <span class="tag">party</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/photography/">
+                        <span class="tag">photography</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/piano/">
+                        <span class="tag">piano</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/priority-queue/">
+                        <span class="tag">priority queue</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/pthread/">
+                        <span class="tag">pthread</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/reading/">
+                        <span class="tag">reading</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/schedule/">
+                        <span class="tag">schedule</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/static-library/">
+                        <span class="tag">static library</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/subclass/">
+                        <span class="tag">subclass</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/superclass/">
+                        <span class="tag">superclass</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/svn/">
+                        <span class="tag">svn</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/targets/">
+                        <span class="tag">targets</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/tour/">
+                        <span class="tag">tour</span>
+                        <span class="tag is-grey">6</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/turtles/">
+                        <span class="tag">turtles</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/tutorial/">
+                        <span class="tag">tutorial</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/video/">
+                        <span class="tag">video</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/weekend/">
+                        <span class="tag">weekend</span>
+                        <span class="tag is-grey">8</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/weekly/">
+                        <span class="tag">weekly</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/work-log/">
+                        <span class="tag">work log</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.png" alt="weiwen🐟1990" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2021 WEI Wen&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'http://weiwen.ai',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
